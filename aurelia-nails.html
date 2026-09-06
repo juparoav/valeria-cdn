@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Aurelia Nails</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500&family=Jost:wght@300;400;500&display=swap">
+  <style>
+    :root{--ivory:#f6f1ea;--surface:#fffdf9;--ink:#2a2521;--muted:#7c7065;--line:#e4d9c9;--rose:#9c6a5f;--rose-deep:#7d5148;--sage:#8b9a7f;}
+    *{box-sizing:border-box;}
+    body{margin:0;background:var(--ivory);color:var(--ink);font-family:'Jost',system-ui,sans-serif;font-weight:300;-webkit-font-smoothing:antialiased;}
+    .serif{font-family:'Cormorant Garamond',Georgia,serif;}
+    .wrap{max-width:880px;margin:0 auto;padding:0 40px;}
+    .eyebrow{font-size:11.5px;letter-spacing:.34em;text-transform:uppercase;color:var(--rose);font-weight:400;}
+    h1,h2{margin:0;font-family:'Cormorant Garamond',Georgia,serif;font-weight:300;}
+    p{margin:0;line-height:1.7;color:var(--muted);font-size:15px;}
+    a{color:var(--rose);text-decoration:none;transition:color .25s;}
+    a:hover{color:var(--rose-deep);}
+    .btn{display:inline-flex;align-items:center;font-size:12px;letter-spacing:.22em;text-transform:uppercase;
+      padding:15px 34px;border-radius:2px;transition:all .3s;border:1px solid var(--ink);}
+    .btn-solid{background:var(--rose);border-color:var(--rose);color:#fff;}
+    .btn-solid:hover{background:var(--rose-deep);border-color:var(--rose-deep);}
+    .row{display:flex;align-items:baseline;gap:16px;padding:19px 0;border-bottom:1px solid var(--line);}
+    .row .d{flex:1;border-bottom:1px dotted #cebfae;transform:translateY(-4px);}
+  </style>
+</head>
+<body>
+<div style="width:100%;min-height:100%;background:var(--ivory);overflow-x:hidden;">
+
+  <!-- nav -->
+  <div class="wrap" style="display:flex;align-items:center;justify-content:space-between;height:88px;">
+    <div class="serif" style="font-size:20px;letter-spacing:.26em;font-weight:500;">AURELIA <span style="color:var(--rose);">· NAILS</span></div>
+    <a href="#" style="font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:var(--ink);">Reservar</a>
+  </div>
+
+  <hr style="border:0;height:1px;background:var(--line);margin:0;">
+
+  <!-- hero -->
+  <div class="wrap" style="text-align:center;padding-top:96px;padding-bottom:64px;">
+    <div class="eyebrow">Nail studio</div>
+    <h1 style="font-size:60px;line-height:1.05;margin-top:24px;text-wrap:balance;">
+      Uñas impecables,<br><em style="font-style:italic;color:var(--rose);">calma incluida</em>.
+    </h1>
+    <p style="margin:24px auto 0;max-width:400px;">Manicure y pedicure de autor en un espacio sereno. Higiene impecable, acabado que dura.</p>
+    <div style="margin-top:34px;"><a class="btn btn-solid" href="#">Reservar cita</a></div>
+  </div>
+
+  <!-- gallery strip -->
+  <div class="wrap" style="display:grid;grid-template-columns:repeat(4,1fr);gap:12px;padding-bottom:72px;">
+    <div style="aspect-ratio:3/4;border-radius:3px;border:1px solid var(--line);background:radial-gradient(120% 90% at 30% 20%,#f1dcd2,#d9c1ad);"></div>
+    <div style="aspect-ratio:3/4;border-radius:3px;border:1px solid var(--line);background:radial-gradient(120% 90% at 60% 30%,#efe2d7,#d3c0aa);"></div>
+    <div style="aspect-ratio:3/4;border-radius:3px;border:1px solid var(--line);background:radial-gradient(120% 90% at 40% 60%,#e7ddc8,#cdbfa2);"></div>
+    <div style="aspect-ratio:3/4;border-radius:3px;border:1px solid var(--line);background:radial-gradient(120% 90% at 50% 30%,#eddcd6,#d0b7a8);"></div>
+  </div>
+
+  <!-- services / prices -->
+  <div style="background:var(--surface);border-top:1px solid var(--line);border-bottom:1px solid var(--line);">
+    <div class="wrap" style="padding-top:70px;padding-bottom:74px;">
+      <div style="text-align:center;margin-bottom:36px;">
+        <div class="eyebrow">Servicios</div>
+        <h2 style="font-size:38px;margin-top:14px;">Carta &amp; tarifas</h2>
+      </div>
+      <div class="row"><span class="serif" style="font-size:22px;">Manicure clásica</span><span class="d"></span><span style="font-size:13px;color:var(--muted);">40 min</span><span class="serif" style="font-size:20px;">$[precio]</span></div>
+      <div class="row"><span class="serif" style="font-size:22px;">Semipermanente</span><span class="d"></span><span style="font-size:13px;color:var(--muted);">60 min</span><span class="serif" style="font-size:20px;">$[precio]</span></div>
+      <div class="row"><span class="serif" style="font-size:22px;">Nail art &amp; diseño</span><span class="d"></span><span style="font-size:13px;color:var(--muted);">75 min</span><span class="serif" style="font-size:20px;">$[precio]</span></div>
+      <div class="row" style="border-bottom:0;"><span class="serif" style="font-size:22px;">Pedicure spa</span><span class="d"></span><span style="font-size:13px;color:var(--muted);">55 min</span><span class="serif" style="font-size:20px;">$[precio]</span></div>
+    </div>
+  </div>
+
+  <!-- footer -->
+  <div class="wrap" style="display:flex;align-items:center;justify-content:space-between;padding-top:34px;padding-bottom:40px;">
+    <span class="serif" style="font-size:16px;letter-spacing:.24em;">AURELIA · NAILS</span>
+    <span style="font-size:12px;color:var(--muted);letter-spacing:.06em;">[dirección] · [teléfono] · @aurelia</span>
+  </div>
+
+</div>
+</body>
+</html>
